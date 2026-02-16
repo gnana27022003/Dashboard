@@ -1,0 +1,44 @@
+<!-- Top Bar -->
+<div class="topbar">
+    <div class="hamburger" onclick="toggleSidebar()">
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="logo">Listings Hub</div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search listings, reviews, or searches...">
+    </div>
+
+    <div class="topbar-right">
+        <div class="notification-icon">
+            🔔<span class="notification-badge">3</span>
+        </div>
+
+        <div class="profile-wrapper">
+            <div class="profile-dropdown" onclick="toggleProfileDropdown(event)">
+                <%= personData ? personData.name : "Select Profile" %> ▼
+            </div>
+
+            <div class="profile-menu" id="profileMenu">
+                <a href="/select/person1">Person 1</a>
+                <a href="/select/person2">Person 2</a>
+                <a href="/select/person3">Person 3</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+        <li data-route="/">📊 Dashboard</li>
+        <li data-route="/listings">📝 My Listings</li>
+        <li data-route="/addList">➕ Add Listing</li>
+        <li data-route="/review">⭐ Reviews</li>
+        <li data-route="/savedsearch">🔍 Saved Searches</li>
+        <li data-route="/message">💬 Messages</li>
+        <li data-route="/setting">⚙️ Settings</li>
+        <li onclick="logout()">🚪 Logout</li>
+    </ul>
+</nav>

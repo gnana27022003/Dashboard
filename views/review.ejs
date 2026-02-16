@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="main-layout">
+    <%- include('header') %>
+
+    <main class="content-area">
+        <h1 class="page-title">Reviews</h1>
+
+        <% if (personData && personData.reviews && personData.reviews.length > 0) { %>
+            <ul class="review-list">
+                <% personData.reviews.forEach((review, index) => { %>
+                    <li class="review-item">
+
+                        <span id="review-text-<%= index %>">
+                            <%= review %>
+                        </span>
+
+                        <input
+                            type="text"
+                            id="review-input-<%= index %>"
+                            value="<%= review %>"
+                            style="display:none"
+                        />
+
+                        <button onclick="enableReviewEdit(<%= index %>)">✏️ Edit</button>
+                        <button onclick="saveReviewEdit(<%= index %>)">💾 Save</button>
+                        <button onclick="deleteReview(<%= index %>)">🗑 Delete</button>
+
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p>Select a profile to view reviews</p>
+        <% } %>
+
+    </main>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>

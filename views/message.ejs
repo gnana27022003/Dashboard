@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="main-layout">
+    <%- include('header') %>
+
+    <main class="content-area">
+        <h1 class="page-title">Messages</h1>
+
+        <% if (personData && personData.messages && personData.messages.length > 0) { %>
+            <ul class="data-list">
+                <% personData.messages.forEach((msg) => { %>
+                    <li class="data-item">
+                        💬 <%= msg %>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p class="empty-text">No messages found</p>
+        <% } %>
+
+    </main>
+</div>
+
+</body>
+</html>

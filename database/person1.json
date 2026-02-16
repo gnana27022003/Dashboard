@@ -1,0 +1,27 @@
+{
+  "name": "person1",
+  "listings": [
+    "Office Space",
+    "Web Services",
+    "Furniture",
+    "washing"
+  ],
+  "reviews": [
+    "Very professional",
+    "Highly recommended"
+  ],
+  "savedSearches": [
+    "Real Estate",
+    "IT Services",
+    "Marketing"
+  ],
+  "messages": [
+    "Hello!",
+    "Need details",
+    "Thanks"
+  ],
+  "settings": {
+    "notifications": true,
+    "darkMode": false
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings Management Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    
+
+</head>
+<body>
+    <div class="main-layout">
+     <%- include('header') %>
+   
+        <!-- Content Area -->
+        <main class="content-area">
+            <div class="page-header">
+                <h1 class="page-title">Dashboard</h1>
+
+<% if (personData) { %>
+    <p>Welcome, <strong><%= personData.name %></strong></p>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <div class="card-title">Listings</div>
+            <div class="card-value"><%= personData.listings.length %></div>
+        </div>
+
+                <div class="card">
+                    <div class="card-title">Reviews</div>
+                    <div class="card-value"><%= personData.reviews.length %></div>
+                </div>
+            </div>
+        <% } else { %>
+            <p>Please select a profile</p>
+        <% } %>
+
+            </div>
+        </main>
+    </div>
+    
+
+    <script src="/script.js"></script>
+        
+</body>
+</html>

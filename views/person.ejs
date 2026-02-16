@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings Management Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    
+
+</head>
+<body>
+    <div class="main-layout">
+     <%- include('header') %>
+   
+        <!-- Content Area -->
+        <main class="content-area">
+            <div class="page-header">
+                <h1 class="page-title">Dashboard</h1>
+                <div class="breadcrumbs">Home / Dashboard</div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary">➕ Create New Listing</button>
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="dashboard-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Total Listings</div>
+                        <div class="card-icon">📋</div>
+                    </div>
+                    <div class="card-value">248</div>
+                    <div class="card-description">+12 this month</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Active Listings</div>
+                        <div class="card-icon">✅</div>
+                    </div>
+                    <div class="card-value">187</div>
+                    <div class="card-description">75% of total</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Reviews</div>
+                        <div class="card-icon">⭐</div>
+                    </div>
+                    <div class="card-value">1,432</div>
+                    <div class="card-description">4.6 avg rating</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Saved Searches</div>
+                        <div class="card-icon">🔍</div>
+                    </div>
+                    <div class="card-value">56</div>
+                    <div class="card-description">8 new alerts</div>
+                </div>
+            </div>
+
+            <!-- Recent Listings Table -->
+            <div class="table-container">
+                <h2 style="margin-bottom: 20px; color: #36656B;">Recent Listings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Views</th>
+                            <th>Created</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Modern Office Space Downtown</td>
+                            <td>Real Estate</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>342</td>
+                            <td>Jan 20, 2026</td>
+                            <td>✏️ 👁️ 🗑️</td>
+                        </tr>
+                        <tr>
+                            <td>Professional Web Design Services</td>
+                            <td>Services</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>128</td>
+                            <td>Jan 18, 2026</td>
+                            <td>✏️ 👁️ 🗑️</td>
+                        </tr>
+                        <tr>
+                            <td>Vintage Furniture Collection</td>
+                            <td>Products</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                            <td>89</td>
+                            <td>Jan 15, 2026</td>
+                            <td>✏️ 👁️ 🗑️</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Consultation</td>
+                            <td>Services</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td>256</td>
+                            <td>Jan 12, 2026</td>
+                            <td>✏️ 👁️ 🗑️</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+
+    <script src="/script.js"></script>
+        
+</body>
+</html>

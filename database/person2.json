@@ -1,0 +1,25 @@
+{
+  "name": "person2",
+  "listings": [
+    "Interior Design Service",
+    "redisss"
+  ],
+  "reviews": [
+    "Quick response",
+    "Affordable pricing"
+  ],
+  "savedSearches": [
+    "Home Interiors",
+    "Land for Sale"
+  ],
+  "messages": [
+    "Hi",
+    "Can you share pricing?",
+    "Looks good",
+    "Let me confirm"
+  ],
+  "settings": {
+    "notifications": false,
+    "darkMode": true
+  }
+}

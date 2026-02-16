@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved Searches</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="main-layout">
+    <%- include('header') %>
+
+    <main class="content-area">
+        <h1 class="page-title">Saved Searches</h1>
+
+        <% if (personData && personData.savedSearches && personData.savedSearches.length > 0) { %>
+            <ul class="data-list">
+                <% personData.savedSearches.forEach((search) => { %>
+                    <li class="data-item">
+                        🔍 <%= search %>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p class="empty-text">No saved searches available</p>
+        <% } %>
+
+    </main>
+</div>
+
+</body>
+</html>

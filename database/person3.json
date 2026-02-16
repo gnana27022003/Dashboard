@@ -1,0 +1,33 @@
+{
+  "name": "person3",
+  "listings": [
+    "Content Writing",
+    "Brand Strategy",
+    "planning"
+  ],
+  "reviews": [
+    "Excellent ROI",
+    "Strong communication",
+    "Delivered on time",
+    "Will hire again"
+  ],
+  "savedSearches": [
+    "Marketing Agencies",
+    "Freelancers",
+    "SEO Experts",
+    "Brand Consultants",
+    "Ad Campaigns"
+  ],
+  "messages": [
+    "Hello team",
+    "Need a proposal",
+    "Please revise quote",
+    "Approved",
+    "Payment done",
+    "Thanks"
+  ],
+  "settings": {
+    "notifications": true,
+    "darkMode": true
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="main-layout">
+    <%- include('header') %>
+
+    <main class="content-area">
+        <h1 class="page-title">Settings</h1>
+
+        <% if (personData && personData.settings) { %>
+            <div class="settings-box">
+                <div class="setting-item">
+                    <strong>Notifications:</strong>
+                    <span>
+                        <%= personData.settings.notifications ? "Enabled ✅" : "Disabled ❌" %>
+                    </span>
+                </div>
+
+                <div class="setting-item">
+                    <strong>Dark Mode:</strong>
+                    <span>
+                        <%= personData.settings.darkMode ? "Enabled 🌙" : "Disabled ☀️" %>
+                    </span>
+                </div>
+            </div>
+        <% } else { %>
+            <p class="empty-text">No settings found</p>
+        <% } %>
+
+    </main>
+</div>
+
+</body>
+</html>
